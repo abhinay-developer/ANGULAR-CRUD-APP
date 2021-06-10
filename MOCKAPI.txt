@@ -1,0 +1,48 @@
+TO CREATE MOCK API
+===================
+
+Step1::npm install -g json-server
+Step2::json-server --watch db.json
+Step3::Modify API
+
+
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "abhinay",
+      "lastName": "galipally",
+      "email": "abhinay@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "firstName": "raja",
+      "lastName": "kiran",
+      "email": "rajkiran@gmail.com",
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "firstName": "nani",
+      "lastName": "sharma",
+      "email": "nanisharma@gmail.com",
+      "gender": "male"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+
+Alternative port
+You can start JSON Server on other ports with the --port flag:
+
+json-server --watch db.json --port 3004
